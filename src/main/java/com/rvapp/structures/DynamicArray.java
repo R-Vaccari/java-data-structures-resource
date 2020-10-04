@@ -9,7 +9,7 @@ public class DynamicArray <T> implements Iterable<T> {
     private int capacity;
 
     public DynamicArray(int capacity) {
-        if (capacity >= 0) throw new IllegalArgumentException("Array must have capacity of 1 or more elements");
+        if (capacity <= 0) throw new IllegalArgumentException("Array must have capacity of 1 or more elements");
         this.capacity = capacity;
         array = (T[]) new Object[capacity];
     }
@@ -20,8 +20,13 @@ public class DynamicArray <T> implements Iterable<T> {
     }
 
     public void add(T element) {
-        if (len < capacity) array[len + 1] = element;
-        else {
+        if (len == 0) {
+            array[0] = element;
+            len++;
+        }  else if (len < capacity) {
+            array[len] = element;
+            len++;
+        } else {
             capacity += 1;
             T[] newArray = (T []) new Object[capacity];
             for (int i = 0; i < len; i++) newArray[i] = array[i];
