@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.rvapp.tests.ApplicationTests$DynamicArrayTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-10-10T00:10:49" hostname="DESKTOP-DMDEPCI" time="0.044">
+  <properties/>
+  <testcase name="fillLengthTest()" classname="com.rvapp.tests.ApplicationTests$DynamicArrayTests" time="0.027"/>
+  <testcase name="removeAtTest()" classname="com.rvapp.tests.ApplicationTests$DynamicArrayTests" time="0.003"/>
+  <testcase name="removeFalseTest()" classname="com.rvapp.tests.ApplicationTests$DynamicArrayTests" time="0.003"/>
+  <testcase name="removeTrueTest()" classname="com.rvapp.tests.ApplicationTests$DynamicArrayTests" time="0.002"/>
+  <testcase name="addOneLengthTest()" classname="com.rvapp.tests.ApplicationTests$DynamicArrayTests" time="0.0"/>
+  <testcase name="removeAtExceptionTest()" classname="com.rvapp.tests.ApplicationTests$DynamicArrayTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

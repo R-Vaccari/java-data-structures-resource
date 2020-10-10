@@ -2,6 +2,7 @@ package com.rvapp.structures;
 
 import java.util.Iterator;
 
+@SuppressWarnings("ALL")
 public class DynamicArray <T> implements Iterable<T> {
 
     private T[] array;
@@ -36,7 +37,7 @@ public class DynamicArray <T> implements Iterable<T> {
 
     public boolean remove(Object element) {
         for (int i = 0; i < capacity; i++) {
-            if (array[i].equals(element)) {
+            if (array[i] == element) {
                 array[i] = null;
                 return true;
             }
@@ -75,6 +76,10 @@ public class DynamicArray <T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new java.util.Iterator<T>() {
+            int index = 0;
+            public boolean hasNext() { return index < len; }
+            public T next() { return array[index++]; }
+        };
     }
 }

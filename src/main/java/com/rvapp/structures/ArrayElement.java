@@ -7,9 +7,7 @@ public class ArrayElement {
     private int id;
     private String name;
 
-    public ArrayElement() {
-
-    }
+    public ArrayElement() { }
 
     public ArrayElement(int id, String name) {
         this.id = id;
